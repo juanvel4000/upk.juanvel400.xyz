@@ -1,0 +1,9 @@
+{
+    "name": "python3",
+    "versions": { 
+        "3.14": "https://upk.juanvel400.xyz/pub/python3-3.14.0a7.upk",
+        "default": "3.14"
+    },
+    "arch": "x86_64",
+    "platform": "linux"
+}
