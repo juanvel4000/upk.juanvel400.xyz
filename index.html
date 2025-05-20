@@ -1,10 +1,42 @@
-<html>
-  <head>
-    <title>upk</title>
-    <link rel="stylesheet" href="https://umis.juanvel400.xyz/style/themes/uMISDark.css">
-  </head>
-  <body>
-    <center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>upk</title>
+  <link rel="stylesheet" href="https://umis.juanvel400.xyz/style/themes/uMISDark.css">
+  <style>
+    body {
+      text-align: center;
+      font-family: monospace;
+    }
+    .ascii-art {
+      font-size: 16px;
+      margin-top: 40px;
+    }
+    code {
+      background-color: #222;
+      padding: 6px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0;
+    }
+    pre code {
+      display: block;
+      white-space: pre-wrap;
+      text-align: left;
+      margin: auto;
+      max-width: 600px;
+    }
+    hr {
+      width: 50%;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="ascii-art">
       <pre>
                     _    
                    | |   
@@ -14,22 +46,27 @@
         \__,_| .__/|_|\_\
              | |         
              |_|         
-
-
       </pre>
-      <h3>The greatest user-wide package manager for <b>Linux</b> and <b>macOS</b></h3>
-      <hr>
-      <h5>Install upk</h5>
-      <p>Just run this in your terminal</p>
-      <code>bash -c (curl -fsSL https://raw.githubusercontent.com/juanvel4000/upk/HEAD/install.sh)</code>
-      <hr>
-      <h5>Credits</h5>
-      <p>Inspired by <a href="https://brew.sh">Homebrew</a></p>
-      <hr>
-      <h3>Packages</h3>
-      <p>Packages in upk are really simple, just create a folder, create folders `Info` and `Source` in it, then create a `Manifest.json` in `Info` and put your binaries in `Source`</p> 
-      <p>Then run</p>
-      <code>upk build (folder)</code>
-    </center>
-  </body>
+    </div>
+    <h3>The greatest user-wide package manager for <b>Linux</b> and <b>macOS</b></h3>
+    <hr>
+    <h5>install upk</h5>
+    <p>just run this in your terminal:</p>
+    <code>bash -c "$(curl -fsSL https://raw.githubusercontent.com/juanvel4000/upk/HEAD/install.sh)"</code>
+    <hr>
+    <h5>credits</h5>
+    <p>inspired by <a href="https://brew.sh">Homebrew</a></p>
+    <hr>
+    <h3>packages</h3>
+    <p>packages in upk are really simple. Just create a folder, then:</p>
+    <pre><code>
+mkdir -p your-package/Info your-package/Source
+# add your binaries to Source
+# create Manifest.json in Info
+
+upk build your-package
+    </code></pre>
+  </main>
+</body>
 </html>
+
