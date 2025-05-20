@@ -1,5 +1,6 @@
 {
     "packages": {
-        "python3": "https://upk.juanvel400.xyz/reg/python3.json"
+        "python3": "https://upk.juanvel400.xyz/reg/python3.json",
+        "upk": "https://upk.juanvel400.xyz/reg/upk.json"
     }
 }
