@@ -1,0 +1,9 @@
+{
+    "name": "upk",
+    "versions": { 
+        "1.0-beta3": "https://upk.juanvel400.xyz/pool/upk-1.0-beta3.upk",
+        "default": "1.0-beta3"
+    },
+    "arch": "x86_64",
+    "platform": "linux"
+}
